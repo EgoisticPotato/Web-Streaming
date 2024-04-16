@@ -32,7 +32,7 @@
         }
         .video-container {
             display: flex;
-            justify-content: center; /* Center the image */
+            justify-content: center; /* Center the video horizontally */
             margin-top: 20px;
         }
         .video {
@@ -45,7 +45,10 @@
 <body>
     <h1>EgoTato Peeling Tomato with a Potato</h1>
     <div class="video-container">
-        <img class="video" src="{{ url_for('video') }}" alt="Live Video Stream 1"/>
+        <video class="video" autoplay controls>
+            <source src="{{ url_for('video') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 </body>
 </html>
