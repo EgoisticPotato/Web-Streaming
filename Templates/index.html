@@ -32,11 +32,11 @@
         }
         .video-container {
             display: flex;
-            justify-content: center; /* Center the video horizontally */
+            justify-content: space-around;
             margin-top: 20px;
         }
         .video {
-            width: 70%; /* Adjust the width as needed */
+            width: 40%; /* Adjust the width as needed */
             border: 2px solid #fff;
             border-radius: 8px;
         }
@@ -45,10 +45,7 @@
 <body>
     <h1>EgoTato Peeling Tomato with a Potato</h1>
     <div class="video-container">
-        <video class="video" autoplay controls>
-            <source src="{{ url_for('video') }}" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <img class="video" src="{{ url_for('video') }}" alt="Live Video Stream 1"/>
     </div>
 </body>
 </html>
